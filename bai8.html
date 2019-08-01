@@ -10,16 +10,19 @@
     <h2>Game Đoán Số</h2>
     <button type="button" onclick="game()">Bắt đầu</button>
     <script>
+       
     function game() {
-        let a=prompt("Nhập số từ 0 đến 10");
-        let b= Math.round(Math.random()*10);
+        let a=parseInt(prompt("Nhập khoảng muốn chọn từ "));
+        let b=parseInt(prompt("Đến  "));
+        let c=prompt("Chọn số từ khoảng "+a+" đến "+b);
+        let d= Math.floor(Math.random()*(b-a+1)) + a;
          for (i=1;i<3;i++) {
-             if (a==b) {
+             if (c==d) {
                  alert("Bạn đã đoán đúng");
                  break;
              } else { 
-                 alert("Bạn đã nhập sai số đúng là " + b );
-                 a=prompt("Nhập số từ 1 đến 10");
+                 alert("Bạn đã nhập sai số đúng là " + d );
+                 c=prompt("Chọn số từ khoảng "+a+" đến "+b);
              }
          }
     }

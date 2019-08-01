@@ -11,16 +11,23 @@
         let i=1;
         let n;
     for(;i <= 100;i++) {
-        n = i ;
-        if( n % 5 == 0 && n % 3 == 0) {
-            document.write(n + " FizzBuzz </br>");
+
+        while(i % 5 == 0) {
+            document.write("Buzz </br>");
+            break;
         }
-        if(n % 3 ==0) {
-            document.write(n + " Fizz </br>");
-        }else if (n % 5 == 0) {
-            document.write(n +" Buzz </br>");
+        while(i % 3 == 0) {
+            document.write("Fizz </br>");
+            break;
         }
-        
+        while(i % 3 == 0 && i % 5 == 0) {
+            document.write("FizzBuzz </br>");
+            break;
+        }
+        while(i % 3 != 0 && i % 5 != 0) {
+            document.write(i+"</br>");
+             break;
+        }
         
     }
     </script>
