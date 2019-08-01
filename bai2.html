@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Sử dụng hàm prompt() để lấy thông tin nhiệt độ hiện tại được nhập bởi người truy cập.
+         Nếu nhiệt độ nhập vào trên 100, yêu cầu người dùng giảm nhiệt độ. 
+         Nếu nhiệt độ dưới 20, yêu cầu người dùng tăng nhiệt độ.*/
+        let t=prompt("Nhiet do hien tai");
+        let temp=parseFloat(t);
+        for(;temp < 20 ;temp) {
+            alert("Yeu cau tang nhiet do");
+            for(;temp > 100;temp) {
+                alert("Yeu cau giam nhiet do");
+            }
+        }
+        
+        </script>
+    
+</body>
+</html>

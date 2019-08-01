@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Game Đoán Số</h2>
+    <button type="button" onclick="game()">Bắt đầu</button>
+    <script>
+    function game() {
+        let a=prompt("Nhập số từ 0 đến 10");
+        let b= Math.round(Math.random()*10);
+         for (i=1;i<3;i++) {
+             if (a==b) {
+                 alert("Bạn đã đoán đúng");
+                 break;
+             } else { 
+                 alert("Bạn đã nhập sai số đúng là " + b );
+                 a=prompt("Nhập số từ 1 đến 10");
+             }
+         }
+    }
+
+    </script>
+    
+</body>
+</html>
